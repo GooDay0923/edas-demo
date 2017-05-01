@@ -24,7 +24,7 @@ public class StartListener implements ServletContextListener{
 				while ( true ) {
 					try {
 						Thread.sleep( 5000l );
-						System.out.println( itemService.getItemById( 1111 ) );
+						System.out.println( itemService.getItemById((long)(Math.random()*(9999-1000+1))+1000));
 						System.out.println( itemService.getItemByName( "myname is le" ) );
 					} catch ( Throwable e ) {
 						e.printStackTrace();
